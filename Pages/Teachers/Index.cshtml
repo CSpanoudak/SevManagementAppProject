@@ -1,0 +1,25 @@
+﻿@page
+@model SevManagementApp.Pages.Teachers.IndexModel
+@{
+}
+
+<h2>List Of Teachers</h2>
+<a class="btn btn-success btn-sm" href="/Teachers/Create">New Teacher</a>
+<table class="table">
+    <thead><tr><th>ID</th><th>Firtsname</th><th>Lastname</th></tr></thead>
+    <tbody>
+        @if (Model.teachers is not null){
+            @foreach (var teacher in Model.teachers){
+                <tr>
+                    <td>@teacher.Id</td>
+                    <td>@teacher.Firstname</td>
+                    <td>@teacher.Lastname</td>
+                    <td>
+                        <a class="btn btn-info btn-small text-light" href="/Teachers/Update?id=@teacher.Id">Update</a>
+                        <a class="btn btn-danger btn-small" href="/Teachers/Delete?id=@teacher.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

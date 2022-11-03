@@ -1,0 +1,52 @@
+﻿@page
+@model SevManagementApp.Pages.Courses.UpdateModel
+@{
+    ViewData["Title"] = "Courses-Update";
+
+}
+
+<h2>Edit course</h2>
+@if (!Model.errorMessage.Equals(""))
+{
+    <h2><strong>@Model.errorMessage</strong></h2>
+}
+
+<form method="POST">
+    <div class="row mb-3">
+        <input type="hidden" class="form-control" name="id"  
+                   value="@Model.courseDto.Id" />
+        
+    </div>
+    <div class="row mb-3">
+        <label for="coursename" class="col-md-2 col-form-label">Course's name</label>
+        <div>
+            <input type="text" class="form-control"
+                   name="coursename" id="coursename" placeholder="Enter course name"
+                   value="@Model.courseDto.CourseName" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="description" class="col-md-2 col-form-label">Course's descriptiom</label>
+        <div>
+            <textarea class="form-control" 
+                   name="description" id="description" placeholder="Enter a description for your subject"
+                      value="@Model.courseDto.Description" required>@Model.courseDto.Description</textarea>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="teacherid" class="col-md-2 col-form-label">Course's Teacher</label>
+        <div>
+            <input type="text" class="form-control"
+                   name="teacherid" id="teacherid" placeholder="Enter teacher (Id)"
+                   value="@Model.courseDto.TeachersId" />
+        </div>   
+    </div>
+    <div class="row mb-3">
+        <div class="offset-md-1 col-md-3 d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="offset-md-1 col-md-3 d-grid">
+            <a href="/Courses/Index" role="button" class="btn btn-secondary text-light">Cancel</a>
+        </div>
+    </div>
+</form>

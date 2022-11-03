@@ -1,0 +1,44 @@
+﻿@page
+@model SevManagementApp.Pages.Enrollments.UpdateModel
+@{
+    ViewData["Title"] = "Courses-Update";
+
+}
+
+<h2>Νέο Μάθημα</h2>
+@if (!Model.errorMessage.Equals(""))
+{
+    <h2><strong>@Model.errorMessage</strong></h2>
+}
+
+<form method="POST">
+    <div class="row mb-3">
+        <input type="hidden" class="form-control" name="id"  
+                   value="@Model.enrollmentDto.Id" />
+        
+    </div>
+    <div class="row mb-3">
+        <label for="studentid" class="col-md-2 col-form-label">Course (Id)</label>
+        <div>
+            <input type="text" class="form-control"
+                   name="courseid" id="courseid" placeholder="Enter course (Id)"
+                   value="@Model.enrollmentDto.CourseId" />
+        </div>
+    </div>
+    <div class="row mb-3">
+            <label for="studentid" class="col-md-2 col-form-label">Student (Id)</label>
+            <div>
+                <input type="text" class="form-control"
+                       name="studentid" id="studentid" placeholder="Enter student (Id)"
+                       value="@Model.enrollmentDto.StudentId" />
+            </div>   
+    </div>
+    <div class="row mb-3">
+        <div class="offset-md-1 col-md-3 d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="offset-md-1 col-md-3 d-grid">
+            <a href="/Enrollments/Index" role="button" class="btn btn-secondary text-light">Cancel</a>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,48 @@
+﻿@page
+@model SevManagementApp.Pages.Courses.CreateModel
+@{
+    ViewData["Title"] = "Courses-Insert";
+}
+
+
+<h2>New Course</h2>
+@if (!Model.errorMessage.Equals("")) {
+    <h2><strong>@Model.errorMessage</strong></h2>
+}
+
+<form method="POST">
+    <div class="row mb-3">
+        <label for="coursename" class="col-md-2 col-form-label">Course's name</label>
+        <div>
+            <input type="text" class="form-control"
+                   name="coursename" id="coursename" placeholder="Enter subject name"
+                   value="@Model.courseDto.CourseName" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="description" class="col-md-2 col-form-label" >Course's description</label>
+        <div>
+            <textarea class= "form-control"
+                   name="description" id="description" placeholder="Enter course description"
+                   value="@Model.courseDto.Description" 0,0></textarea>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="teacherid" class="col-md-2 col-form-label">Course's teacher (Id)</label>
+        <div>
+            <input type="text" class="form-control"
+                      name="teacherid" id="teacherid" placeholder="Enter teachres id"
+                      value="@Model.courseDto.TeachersId" />
+        </div>
+    </div>
+   
+            
+    <div class="row mb-3">
+        <div class="offset-md-1 col-md-3 d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="offset-md-1 col-md-3 d-grid">
+            <a href="/Courses/Index" role="button" class="btn btn-secondary text-light">Cancel</a>
+        </div>
+    </div>
+</form>
