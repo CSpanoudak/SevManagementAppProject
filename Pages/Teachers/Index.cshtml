@@ -10,7 +10,7 @@
     <tbody>
         @if (Model.teachers is not null){
             @foreach (var teacher in Model.teachers){
-                <tr>
+                <tr class="tr-hoverable">
                     <td>@teacher.Id</td>
                     <td>@teacher.Firstname</td>
                     <td>@teacher.Lastname</td>

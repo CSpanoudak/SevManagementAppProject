@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WcLhh6DLnN5tQMZiksuQaQ4GydggCrPL/Cq/tR51NgQ=",
+  "Hash": "JVMfN1t8mSTLrHD2FEG9v7ibFADbswDsjb28BbtFqaQ=",
   "Source": "SevManagementApp",
   "BasePath": "_content/SevManagementApp",
   "Mode": "Default",
@@ -49,6 +49,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\CharSpan\\source\\repos\\SebAUEB2022\\SevManagementApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SevManagementApp.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\CharSpan\\source\\repos\\SebAUEB2022\\SevManagementApp\\wwwroot\\css\\images\\digima-temp-fb-page.jpg",
+      "SourceId": "SevManagementApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CharSpan\\source\\repos\\SebAUEB2022\\SevManagementApp\\wwwroot\\",
+      "BasePath": "_content/SevManagementApp",
+      "RelativePath": "css/images/digima-temp-fb-page.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\images\\digima-temp-fb-page.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\CharSpan\\source\\repos\\SebAUEB2022\\SevManagementApp\\wwwroot\\css\\images\\dz_logo.jpg",
+      "SourceId": "SevManagementApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CharSpan\\source\\repos\\SebAUEB2022\\SevManagementApp\\wwwroot\\",
+      "BasePath": "_content/SevManagementApp",
+      "RelativePath": "css/images/dz_logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\images\\dz_logo.jpg"
     },
     {
       "Identity": "C:\\Users\\CharSpan\\source\\repos\\SebAUEB2022\\SevManagementApp\\wwwroot\\css\\images\\FB-Banner-2.png",

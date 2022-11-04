@@ -30,7 +30,8 @@ namespace SevManagementApp.Pages.Enrollments
         {
             enrollmentDto.CourseId = int.Parse(Request.Form["courseid"]);
             enrollmentDto.StudentId = int.Parse(Request.Form["studentid"]);
-            
+
+            errorMessage = EnrollmentValidator.Validate(enrollmentDto);
 
             if (!errorMessage.Equals("")) return;
 

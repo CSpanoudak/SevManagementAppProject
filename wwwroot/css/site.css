@@ -15,9 +15,15 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: beige;
 }
 
 footer {
     background-color: black;
     color : white;
+}
+
+.tr-hoverable:hover {
+    background-color: #3e4444;
+    color: white;
 }
